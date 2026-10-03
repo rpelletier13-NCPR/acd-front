@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AskCarolToday.com — ask Carol about your 2026 North Carolina ballot</title>
-<meta name="description" content="Carol is an AI librarian for North Carolina voters. She answers only from certified public records — who is on your ballot, what they have done, where the…"><meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Carol is an AI librarian for North Carolina voters. She answers only from certified public records — who is on your ballot, what they have done, where the…">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -16,6 +16,13 @@ body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Hel
 a { color: inherit; }
 .bar { background: var(--navy); color: var(--white); padding: .8rem 0; }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: .25rem 1rem; align-items: baseline; }
+/* THE BUTTON SITS TOP RIGHT AND STAYS REACHABLE. margin-left:auto pushes it to the
+   end of the bar on a wide screen; on a phone the bar wraps and it sits under the
+   tagline rather than squeezing it. "No one should have to search to get to NCTTC"
+   (CA4-O03-019 item 4). */
+.bar .gobtn { margin-left: auto; background: var(--gold); color: var(--ink);
+              font-weight: 700; text-decoration: none; padding: .45rem .9rem;
+              border-radius: 6px; white-space: nowrap; }
 .wordmark { font-weight: 800; letter-spacing: .06em; }
 .tagline { font-size: .85rem; opacity: .92; }
 .hero { background: var(--pale); padding: 2.6rem 0; }
@@ -67,6 +74,7 @@ footer p { margin: .35rem 0; }
 <div class="bar"><div class="wrap">
 <span class="wordmark">ASKCAROLTODAY.COM</span>
 <span class="tagline">Free · nonpartisan · every fact cited · a front door to NCTimeToChoose.org</span>
+<a class="gobtn" href="https://nctimetochoose.org/">Go to NCTimeToChoose.org</a>
 </div></div>
 
 <div class="hero"><div class="wrap">
@@ -98,7 +106,7 @@ footer p { margin: .35rem 0; }
 <a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Who%20voted%20for%20the%202025%20New%20Hanover%20County%20budget%20and%20what%20was%20the%20reported%20impact%3F">Who voted for the 2025 New Hanover County budget and what was the reported impact?</a>
 <a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Compare%20the%20candidates%20in%20the%20NC%20Senate%20District%207%20race.">Compare my state Senate candidates, senate district 7</a>
 <a class="chip" href="https://nctimetochoose.org/ask-carol/?q=When%20does%20early%20voting%20start.">When can I vote early?</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Is%20North%20Carolina%27s%20corporate%20income%20tax%20really%20going%20to%20zero%20%E2%80%94%20if%20so%2C%20what%20does%20that%20mean%20for%20school%20funding%3F">What happens to school funding?</a>
+<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=What%20happens%20to%20school%20funding%20when%20the%20corporate%20income%20tax%20is%200%25%20in%202030%3F">What happens to school funding when the corporate income tax is 0% in 2030?</a>
 </div>
 <p class="chipfoot">Ask as many as you want. Download the transcript. Take it to the voting booth.</p>
 </div></section>
@@ -107,7 +115,7 @@ footer p { margin: .35rem 0; }
 <h2>Whatever brought you here</h2>
 <div class="tiles">
 <a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20were%20North%20Carolina%27s%20biggest%20environment%20and%20climate%20policy%20decisions%20since%202010%3F"><b>Environment</b>Storms, water, climate — the decisions on the record since 2010.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=How%20has%20North%20Carolina%20funded%20its%20public%20schools%20since%202010%3F"><b>Education</b>School money, teacher pay, and the tax changes behind them.</a>
+<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=How%20has%20NC%20been%20funding%20private%20school%20education%20since%202010%3F"><b>Education</b>School money, teacher pay, and the tax changes behind them.</a>
 <a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20changes%20have%20been%20made%20to%20North%20Carolina%27s%20election%20laws%20and%20voting%20rules%20since%202010%3F"><b>Democracy</b>Election laws and voting rules — what changed, documented.</a>
 <a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20would%20the%20proposed%20amendment%20capping%20the%20state%20income%20tax%20actually%20do%3F"><b>Money & Amendments</b>Budgets, campaign money, and what the amendments would do.</a>
 </div>
@@ -128,8 +136,7 @@ footer p { margin: .35rem 0; }
 <section class="dates"><div class="wrap">
 <span>Register by Oct 9</span>
 <span>Early voting Oct 15–31 · same-day registration</span>
-<span>Election Day Nov 3</span>
-<span><a href="https://www.ncsbe.gov">Official rules: ncsbe.gov</a></span>
+<span>Election Day Nov 3</span><span><a href="https://www.ncsbe.gov" target="_blank" rel="noopener">Official rules: ncsbe.gov</a></span>
 </div></section>
 
 <section class="mission"><div class="wrap">
