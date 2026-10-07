@@ -9,3 +9,30 @@
 /s/x  /  302
 /s/em  /  302
 /s/vlog  /  302
+
+# Question aliases — tiles (item 1).
+/q/environment  https://nctimetochoose.org/ask-carol/?q=What%20were%20North%20Carolina%27s%20biggest%20environment%20and%20climate%20policy%20decisions%20since%202010%3F  302
+/q/education  https://nctimetochoose.org/ask-carol/?q=How%20has%20NC%20been%20funding%20private%20school%20education%20since%202010%3F  302
+/q/democracy  https://nctimetochoose.org/ask-carol/?q=What%20changes%20have%20been%20made%20to%20North%20Carolina%27s%20election%20laws%20and%20voting%20rules%20since%202010%3F  302
+/q/money  https://nctimetochoose.org/ask-carol/?q=What%20would%20the%20proposed%20amendment%20capping%20the%20state%20income%20tax%20actually%20do%3F  302
+/q/childcare  https://nctimetochoose.org/ask-carol/?q=What%20has%20NC%20done%20to%20support%20child%20care%3F%20What%20are%20the%20problems%3F  302
+/q/infrastructure  https://nctimetochoose.org/ask-carol/?q=What%20is%20the%20state%20of%20NC%20infrastructure%20-%20schools%2C%20transportation%2C%20dams%3F%20Give%20details.  302
+/q/race-rights  https://nctimetochoose.org/ask-carol/?q=How%20has%20the%20General%20Assembly%20impacted%20race%20and%20rights%20over%20the%20last%2015%20years%3F%20Give%20details.  302
+/q/revenue-caps  https://nctimetochoose.org/ask-carol/?q=How%20will%20NC%20afford%20to%20address%20hurricane%20damage%2C%20infrastructure%20needs%2C%20and%20local%20services%20if%20we%20approve%20constitutional%20amendments%20to%20cap%20the%20personal%20income%20tax%20at%203.5%25%2C%20and%20actually%20set%20the%20corporate%20tax%20rate%20at%200%25%20as%20scheduled%20in%202030%3F  302
+
+# Question aliases — chips (item 1).
+/c/a  https://nctimetochoose.org/ask-carol/?q=Who%20is%20running%20for%20New%20Hanover%20County%20School%20Board%3F  302
+/c/b  https://nctimetochoose.org/ask-carol/?q=What%20are%20the%20three%20constitutional%20amendments%20on%20the%202026%20ballot%3F  302
+/c/c  https://nctimetochoose.org/ask-carol/?q=Who%20voted%20for%20the%202025%20New%20Hanover%20County%20budget%20and%20what%20was%20the%20reported%20impact%3F  302
+/c/d  https://nctimetochoose.org/ask-carol/?q=Compare%20the%20candidates%20in%20the%20NC%20Senate%20District%207%20race.  302
+/c/e  https://nctimetochoose.org/ask-carol/?q=When%20does%20early%20voting%20start.  302
+/c/f  https://nctimetochoose.org/ask-carol/?q=What%20happens%20to%20school%20funding%20when%20the%20corporate%20income%20tax%20is%200%25%20in%202030%3F  302
+
+# The ask box. The destination carries NO query string of its own, which is
+# what lets the edge forward the voter's ?q= across the redirect intact.
+/go  https://nctimetochoose.org/ask-carol/  302
+
+# Civic services (item 2) — external, each counted by intent.
+/b/ballot  https://vt.ncsbe.gov/RegLkup/  302
+/b/register  https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx  302
+/b/check  https://vt.ncsbe.gov/RegLkup/  302

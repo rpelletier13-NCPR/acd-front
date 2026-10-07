@@ -40,6 +40,13 @@ a { color: inherit; }
           background: var(--navy); color: var(--white);
           border: 2px solid var(--navy); border-radius: 6px; }
 .askhelp { font-size: .9rem; margin: .6rem 0 0; opacity: .85; }
+.herogrid { display: grid; gap: 1.8rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .herogrid { grid-template-columns: 1fr 19rem; } }
+.civic { display: flex; flex-direction: column; gap: .7rem; margin-top: .4rem; }
+.civicbtn { display: block; padding: 1.05rem 1.1rem; border-radius: 8px; text-align: center;
+          font-weight: 800; font-size: 1.03rem; text-decoration: none;
+          background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
+.civiccap { font-size: .8rem; margin: .2rem 0 0; opacity: .8; text-align: center; }
 .btns { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.3rem; }
 .btn { display: inline-block; padding: .8rem 1.2rem; border-radius: 6px;
        font-weight: 700; text-decoration: none; }
@@ -89,20 +96,26 @@ footer p { margin: .35rem 0; }
 <a class="gobtn" href="https://nctimetochoose.org/">Go to NCTimeToChoose.org</a>
 </div></div>
 
-<div class="hero"><div class="wrap">
+<div class="hero"><div class="wrap"><div class="herogrid">
+<div>
 <span class="badge">Your 2026 NC ballot — early voting opens October 15</span>
 <h1>Cut through the spin.<br>Ask Carol.</h1>
-<p>Carol is a librarian for North Carolina voters. She answers only from documented public records — who is on your ballot, what they have done, where the money comes from, what the amendments change — and cites every single fact. If it is not in the record, she tells you, and sends you to the official source.</p><form class="askbox" method="get" action="https://nctimetochoose.org/ask-carol/" target="_blank" rel="noopener">
+<p>Carol is a librarian for North Carolina voters. She answers only from documented public records — who is on your ballot, what they have done, where the money comes from, what the amendments change — and cites every single fact. If it is not in the record, she tells you, and sends you to the official source.</p><form class="askbox" method="get" action="/go" target="_blank" rel="noopener">
 <label class="sr-only" for="acd-q">Ask about your ballot — any race, any candidate, any amendment…</label>
 <input id="acd-q" name="q" type="text"
        maxlength="1999" autocomplete="off"
        placeholder="Ask about your ballot — any race, any candidate, any amendment…">
 <button type="submit">Ask Carol</button>
 </form>
-<p class="askhelp">Free. No sign-up. Every answer cited to the documented record.</p><div class="btns">
-<a class="btn btn-secondary" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener">Find your ballot</a>
+<p class="askhelp">Free. No sign-up. Every answer cited to the documented record.</p>
 </div>
-</div></div>
+<aside class="civic">
+<a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
+<a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online</a>
+<a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a>
+<p class="civiccap">Official North Carolina state services</p>
+</aside>
+</div></div></div>
 
 <section><div class="wrap"><div class="split">
 <div class="vcard">
@@ -122,12 +135,12 @@ footer p { margin: .35rem 0; }
 <section class="chips"><div class="wrap">
 <h2>Click on one of these sample questions</h2>
 <div class="chipgrid">
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Who%20is%20running%20for%20New%20Hanover%20County%20School%20Board%3F" target="_blank" rel="noopener">Who's running for New Hanover County School Board?</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=What%20are%20the%20three%20constitutional%20amendments%20on%20the%202026%20ballot%3F" target="_blank" rel="noopener">What do the amendments actually change?</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Who%20voted%20for%20the%202025%20New%20Hanover%20County%20budget%20and%20what%20was%20the%20reported%20impact%3F" target="_blank" rel="noopener">Who voted for the 2025 New Hanover County budget and what was the reported impact?</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=Compare%20the%20candidates%20in%20the%20NC%20Senate%20District%207%20race." target="_blank" rel="noopener">Compare my state Senate candidates, senate district 7</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=When%20does%20early%20voting%20start." target="_blank" rel="noopener">When can I vote early?</a>
-<a class="chip" href="https://nctimetochoose.org/ask-carol/?q=What%20happens%20to%20school%20funding%20when%20the%20corporate%20income%20tax%20is%200%25%20in%202030%3F" target="_blank" rel="noopener">What happens to school funding when the corporate income tax is 0% in 2030?</a>
+<a class="chip" href="/c/a" target="_blank" rel="noopener">Who's running for New Hanover County School Board?</a>
+<a class="chip" href="/c/b" target="_blank" rel="noopener">What do the amendments actually change?</a>
+<a class="chip" href="/c/c" target="_blank" rel="noopener">Who voted for the 2025 New Hanover County budget and what was the reported impact?</a>
+<a class="chip" href="/c/d" target="_blank" rel="noopener">Compare my state Senate candidates, senate district 7</a>
+<a class="chip" href="/c/e" target="_blank" rel="noopener">When can I vote early?</a>
+<a class="chip" href="/c/f" target="_blank" rel="noopener">What happens to school funding when the corporate income tax is 0% in 2030?</a>
 </div>
 <p class="chipfoot">Ask as many as you want. Download the transcript. Take it to the voting booth.</p>
 </div></section>
@@ -135,14 +148,14 @@ footer p { margin: .35rem 0; }
 <section><div class="wrap">
 <h2>Look up matters that concern you</h2>
 <div class="tiles">
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20were%20North%20Carolina%27s%20biggest%20environment%20and%20climate%20policy%20decisions%20since%202010%3F" target="_blank" rel="noopener"><b>Environment</b>Storms, water, climate — the decisions on the record since 2010.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=How%20has%20NC%20been%20funding%20private%20school%20education%20since%202010%3F" target="_blank" rel="noopener"><b>Education</b>School money, teacher pay, and the tax changes behind them.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20changes%20have%20been%20made%20to%20North%20Carolina%27s%20election%20laws%20and%20voting%20rules%20since%202010%3F" target="_blank" rel="noopener"><b>Democracy</b>Election laws and voting rules — what changed, documented.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20would%20the%20proposed%20amendment%20capping%20the%20state%20income%20tax%20actually%20do%3F" target="_blank" rel="noopener"><b>Money & Amendments</b>Budgets, campaign money, and what the amendments would do.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20has%20NC%20done%20to%20support%20child%20care%3F%20What%20are%20the%20problems%3F" target="_blank" rel="noopener"><b>Child Care</b>Support, costs, and the gaps families face — on the record.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=What%20is%20the%20state%20of%20NC%20infrastructure%20-%20schools%2C%20transportation%2C%20dams%3F%20Give%20details." target="_blank" rel="noopener"><b>Infrastructure Condition</b>Schools, roads, dams — what the inspections and budgets say.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=How%20has%20the%20General%20Assembly%20impacted%20race%20and%20rights%20over%20the%20last%2015%20years%3F%20Give%20details." target="_blank" rel="noopener"><b>Race and Rights</b>Fifteen years of law-making, documented.</a>
-<a class="tile" href="https://nctimetochoose.org/ask-carol/?q=How%20will%20NC%20afford%20to%20address%20hurricane%20damage%2C%20infrastructure%20needs%2C%20and%20local%20services%20if%20we%20approve%20constitutional%20amendments%20to%20cap%20the%20personal%20income%20tax%20at%203.5%25%2C%20and%20actually%20set%20the%20corporate%20tax%20rate%20at%200%25%20as%20scheduled%20in%202030%3F" target="_blank" rel="noopener"><b>State Revenue Caps</b>The amendments' math: what gets funded, what doesn't.</a>
+<a class="tile" href="/q/environment" target="_blank" rel="noopener"><b>Environment</b>Storms, water, climate — the decisions on the record since 2010.</a>
+<a class="tile" href="/q/education" target="_blank" rel="noopener"><b>Education</b>School money, teacher pay, and the tax changes behind them.</a>
+<a class="tile" href="/q/democracy" target="_blank" rel="noopener"><b>Democracy</b>Election laws and voting rules — what changed, documented.</a>
+<a class="tile" href="/q/money" target="_blank" rel="noopener"><b>Money & Amendments</b>Budgets, campaign money, and what the amendments would do.</a>
+<a class="tile" href="/q/childcare" target="_blank" rel="noopener"><b>Child Care</b>Support, costs, and the gaps families face — on the record.</a>
+<a class="tile" href="/q/infrastructure" target="_blank" rel="noopener"><b>Infrastructure Condition</b>Schools, roads, dams — what the inspections and budgets say.</a>
+<a class="tile" href="/q/race-rights" target="_blank" rel="noopener"><b>Race and Rights</b>Fifteen years of law-making, documented.</a>
+<a class="tile" href="/q/revenue-caps" target="_blank" rel="noopener"><b>State Revenue Caps</b>The amendments' math: what gets funded, what doesn't.</a>
 </div>
 </div></section>
 
