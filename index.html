@@ -65,6 +65,9 @@ ol.steps { padding-left: 1.2rem; } ol.steps li { margin: .8rem 0; max-width: 56c
 .cream { background: var(--cream); }
 .chips { background: var(--navy); color: var(--white); }
 .chips h2 { color: var(--white); }
+.chips .tagline { color: var(--white); font-size: clamp(1.1rem, 2.6vw, 1.45rem);
+                  font-weight: 700; line-height: 1.35; max-width: 34ch;
+                  margin: 0 auto 1.2rem; text-align: center; }
 .chipgrid { display: grid; gap: .8rem; grid-template-columns: 1fr; }
 @media (min-width: 700px) { .chipgrid { grid-template-columns: 1fr 1fr; } }
 .chip { display: block; background: var(--white); color: var(--navy); text-decoration: none;
@@ -133,6 +136,7 @@ footer p { margin: .35rem 0; }
 </div></div></section>
 
 <section class="chips"><div class="wrap">
+<p class="tagline">The most powerful force in a democracy is an informed citizen who votes the entire ballot.</p>
 <h2>Click on one of these sample questions</h2>
 <div class="chipgrid">
 <a class="chip" href="/c/a" target="_blank" rel="noopener">Who's running for New Hanover County School Board?</a>
@@ -178,7 +182,6 @@ footer p { margin: .35rem 0; }
 </div></section>
 
 <section class="mission"><div class="wrap">
-<p>The most powerful force in a democracy is an informed citizen who votes the entire ballot.</p>
 <div class="btns missionbtns">
 <a class="btn btn-primary" href="https://ncpolicyrecord.org/" target="_blank" rel="noopener">Explore the Policy Record 2010 – Present</a>
 <a class="btn btn-primary" href="https://nctimetochoose.org/" target="_blank" rel="noopener">Explore the 2026 Election Races & Referenda</a>
