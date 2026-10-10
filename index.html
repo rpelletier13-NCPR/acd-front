@@ -65,6 +65,21 @@ ol.steps { padding-left: 1.2rem; } ol.steps li { margin: .8rem 0; max-width: 56c
 .cream { background: var(--cream); }
 .chips { background: var(--navy); color: var(--white); }
 .chips h2 { color: var(--white); }
+.undertag { font-size: clamp(1.15rem, 2.8vw, 1.5rem); font-weight: 800; line-height: 1.35;
+            max-width: 34ch; margin: 1rem auto .9rem; text-align: center; }
+.undersuggest { text-align: center; margin: 0 0 1.4rem; }
+.suggestbtn { display: inline-block; padding: .75rem 1.2rem; border-radius: 4px;
+              background: var(--navy); color: var(--white); text-decoration: none;
+              font-weight: 700; min-height: 44px; line-height: 1.7; }
+.suggestbtn:hover, .suggestbtn:focus { text-decoration: underline; }
+.evcard { margin: .9rem 0 0; display: flex; flex-direction: column; gap: .5rem; }
+.evlabel { font-weight: 700; font-size: .95rem; }
+.evcard select { padding: .7rem; font-size: 1rem; min-height: 44px; border-radius: 4px;
+                 border: 1px solid var(--navy); background: var(--white); }
+.evbtn { padding: .8rem 1.1rem; border: 0; border-radius: 4px; background: var(--navy);
+         color: var(--white); font-weight: 700; font-size: 1rem; min-height: 44px;
+         cursor: pointer; }
+.evbtn:hover, .evbtn:focus { text-decoration: underline; }
 .chips .tagline { color: var(--white); font-size: clamp(1.1rem, 2.6vw, 1.45rem);
                   font-weight: 700; line-height: 1.35; max-width: 34ch;
                   margin: 0 auto 1.2rem; text-align: center; }
@@ -116,7 +131,113 @@ footer p { margin: .35rem 0; }
 <a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
 <a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online</a>
 <a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a>
-<p class="civiccap">Official North Carolina state services</p>
+<p class="civiccap">Official North Carolina state services</p><form class="evcard" method="get" action="/b/earlyvote">
+<label class="evlabel" for="evcounty">Find early voting sites in your county</label>
+<select id="evcounty" name="county">
+<option value="">Select your county</option>
+<option value="ALAMANCE">ALAMANCE</option>
+<option value="ALEXANDER">ALEXANDER</option>
+<option value="ALLEGHANY">ALLEGHANY</option>
+<option value="ANSON">ANSON</option>
+<option value="ASHE">ASHE</option>
+<option value="AVERY">AVERY</option>
+<option value="BEAUFORT">BEAUFORT</option>
+<option value="BERTIE">BERTIE</option>
+<option value="BLADEN">BLADEN</option>
+<option value="BRUNSWICK">BRUNSWICK</option>
+<option value="BUNCOMBE">BUNCOMBE</option>
+<option value="BURKE">BURKE</option>
+<option value="CABARRUS">CABARRUS</option>
+<option value="CALDWELL">CALDWELL</option>
+<option value="CAMDEN">CAMDEN</option>
+<option value="CARTERET">CARTERET</option>
+<option value="CASWELL">CASWELL</option>
+<option value="CATAWBA">CATAWBA</option>
+<option value="CHATHAM">CHATHAM</option>
+<option value="CHEROKEE">CHEROKEE</option>
+<option value="CHOWAN">CHOWAN</option>
+<option value="CLAY">CLAY</option>
+<option value="CLEVELAND">CLEVELAND</option>
+<option value="COLUMBUS">COLUMBUS</option>
+<option value="CRAVEN">CRAVEN</option>
+<option value="CUMBERLAND">CUMBERLAND</option>
+<option value="CURRITUCK">CURRITUCK</option>
+<option value="DARE">DARE</option>
+<option value="DAVIDSON">DAVIDSON</option>
+<option value="DAVIE">DAVIE</option>
+<option value="DUPLIN">DUPLIN</option>
+<option value="DURHAM">DURHAM</option>
+<option value="EDGECOMBE">EDGECOMBE</option>
+<option value="FORSYTH">FORSYTH</option>
+<option value="FRANKLIN">FRANKLIN</option>
+<option value="GASTON">GASTON</option>
+<option value="GATES">GATES</option>
+<option value="GRAHAM">GRAHAM</option>
+<option value="GRANVILLE">GRANVILLE</option>
+<option value="GREENE">GREENE</option>
+<option value="GUILFORD">GUILFORD</option>
+<option value="HALIFAX">HALIFAX</option>
+<option value="HARNETT">HARNETT</option>
+<option value="HAYWOOD">HAYWOOD</option>
+<option value="HENDERSON">HENDERSON</option>
+<option value="HERTFORD">HERTFORD</option>
+<option value="HOKE">HOKE</option>
+<option value="HYDE">HYDE</option>
+<option value="IREDELL">IREDELL</option>
+<option value="JACKSON">JACKSON</option>
+<option value="JOHNSTON">JOHNSTON</option>
+<option value="JONES">JONES</option>
+<option value="LEE">LEE</option>
+<option value="LENOIR">LENOIR</option>
+<option value="LINCOLN">LINCOLN</option>
+<option value="MACON">MACON</option>
+<option value="MADISON">MADISON</option>
+<option value="MARTIN">MARTIN</option>
+<option value="MCDOWELL">MCDOWELL</option>
+<option value="MECKLENBURG">MECKLENBURG</option>
+<option value="MITCHELL">MITCHELL</option>
+<option value="MONTGOMERY">MONTGOMERY</option>
+<option value="MOORE">MOORE</option>
+<option value="NASH">NASH</option>
+<option value="NEW HANOVER">NEW HANOVER</option>
+<option value="NORTHAMPTON">NORTHAMPTON</option>
+<option value="ONSLOW">ONSLOW</option>
+<option value="ORANGE">ORANGE</option>
+<option value="PAMLICO">PAMLICO</option>
+<option value="PASQUOTANK">PASQUOTANK</option>
+<option value="PENDER">PENDER</option>
+<option value="PERQUIMANS">PERQUIMANS</option>
+<option value="PERSON">PERSON</option>
+<option value="PITT">PITT</option>
+<option value="POLK">POLK</option>
+<option value="RANDOLPH">RANDOLPH</option>
+<option value="RICHMOND">RICHMOND</option>
+<option value="ROBESON">ROBESON</option>
+<option value="ROCKINGHAM">ROCKINGHAM</option>
+<option value="ROWAN">ROWAN</option>
+<option value="RUTHERFORD">RUTHERFORD</option>
+<option value="SAMPSON">SAMPSON</option>
+<option value="SCOTLAND">SCOTLAND</option>
+<option value="STANLY">STANLY</option>
+<option value="STOKES">STOKES</option>
+<option value="SURRY">SURRY</option>
+<option value="SWAIN">SWAIN</option>
+<option value="TRANSYLVANIA">TRANSYLVANIA</option>
+<option value="TYRRELL">TYRRELL</option>
+<option value="UNION">UNION</option>
+<option value="VANCE">VANCE</option>
+<option value="WAKE">WAKE</option>
+<option value="WARREN">WARREN</option>
+<option value="WASHINGTON">WASHINGTON</option>
+<option value="WATAUGA">WATAUGA</option>
+<option value="WAYNE">WAYNE</option>
+<option value="WILKES">WILKES</option>
+<option value="WILSON">WILSON</option>
+<option value="YADKIN">YADKIN</option>
+<option value="YANCEY">YANCEY</option>
+</select>
+<button type="submit" class="evbtn">Find Early Voting Sites</button>
+</form>
 </aside>
 </div></div></div>
 
@@ -124,6 +245,8 @@ footer p { margin: .35rem 0; }
 <div class="vcard">
 <video controls preload="metadata" poster="/media/welcome-poster.jpg" src="/media/welcome.mp4"></video>
 <div class="vcap">The retired Navy attorney and Internet-standards administrative veteran who built this for every NC voter</div>
+<p class="undertag">The most powerful force in a democracy is an informed citizen who votes the entire ballot.</p>
+<p class="undersuggest"><a class="suggestbtn" href="/b/correct" data-alias="/b/correct" target="_blank" rel="noopener">Submit a Suggestion or Correction</a></p>
 </div>
 <div>
 <h2>Three steps. That's it.</h2>
@@ -136,7 +259,6 @@ footer p { margin: .35rem 0; }
 </div></div></section>
 
 <section class="chips"><div class="wrap">
-<p class="tagline">The most powerful force in a democracy is an informed citizen who votes the entire ballot.</p>
 <h2>Click on one of these sample questions</h2>
 <div class="chipgrid">
 <a class="chip" href="/c/a" target="_blank" rel="noopener">Who's running for New Hanover County School Board?</a>

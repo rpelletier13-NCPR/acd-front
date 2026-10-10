@@ -36,3 +36,9 @@
 /b/ballot  https://vt.ncsbe.gov/RegLkup/  302
 /b/register  https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx  302
 /b/check  https://vt.ncsbe.gov/RegLkup/  302
+
+# Early voting (B1) — counted per county intent.
+/b/earlyvote  https://vt.ncsbe.gov/ossite/  302
+
+# Change request (B2) — the existing corrections intake.
+/b/correct  https://ncpolicyrecord.org/corrections/  302
