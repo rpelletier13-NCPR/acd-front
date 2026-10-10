@@ -37,8 +37,111 @@
 /b/register  https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx  302
 /b/check  https://vt.ncsbe.gov/RegLkup/  302
 
-# Early voting (B1) — counted per county intent.
-/b/earlyvote  https://vt.ncsbe.gov/ossite/  302
+# Early voting (B1, CA4-O10-003 item 1) — 100 counted PATHS,
+# one per county, generated from the certified roster. The edge logs
+# paths and not queries, so the county has to BE the path to be counted.
+# Every rule lands on the same official statewide finder; nothing here
+# claims the state's tool preselects, because it does not.
+/b/ev/alamance  https://vt.ncsbe.gov/ossite/  302
+/b/ev/alexander  https://vt.ncsbe.gov/ossite/  302
+/b/ev/alleghany  https://vt.ncsbe.gov/ossite/  302
+/b/ev/anson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/ashe  https://vt.ncsbe.gov/ossite/  302
+/b/ev/avery  https://vt.ncsbe.gov/ossite/  302
+/b/ev/beaufort  https://vt.ncsbe.gov/ossite/  302
+/b/ev/bertie  https://vt.ncsbe.gov/ossite/  302
+/b/ev/bladen  https://vt.ncsbe.gov/ossite/  302
+/b/ev/brunswick  https://vt.ncsbe.gov/ossite/  302
+/b/ev/buncombe  https://vt.ncsbe.gov/ossite/  302
+/b/ev/burke  https://vt.ncsbe.gov/ossite/  302
+/b/ev/cabarrus  https://vt.ncsbe.gov/ossite/  302
+/b/ev/caldwell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/camden  https://vt.ncsbe.gov/ossite/  302
+/b/ev/carteret  https://vt.ncsbe.gov/ossite/  302
+/b/ev/caswell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/catawba  https://vt.ncsbe.gov/ossite/  302
+/b/ev/chatham  https://vt.ncsbe.gov/ossite/  302
+/b/ev/cherokee  https://vt.ncsbe.gov/ossite/  302
+/b/ev/chowan  https://vt.ncsbe.gov/ossite/  302
+/b/ev/clay  https://vt.ncsbe.gov/ossite/  302
+/b/ev/cleveland  https://vt.ncsbe.gov/ossite/  302
+/b/ev/columbus  https://vt.ncsbe.gov/ossite/  302
+/b/ev/craven  https://vt.ncsbe.gov/ossite/  302
+/b/ev/cumberland  https://vt.ncsbe.gov/ossite/  302
+/b/ev/currituck  https://vt.ncsbe.gov/ossite/  302
+/b/ev/dare  https://vt.ncsbe.gov/ossite/  302
+/b/ev/davidson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/davie  https://vt.ncsbe.gov/ossite/  302
+/b/ev/duplin  https://vt.ncsbe.gov/ossite/  302
+/b/ev/durham  https://vt.ncsbe.gov/ossite/  302
+/b/ev/edgecombe  https://vt.ncsbe.gov/ossite/  302
+/b/ev/forsyth  https://vt.ncsbe.gov/ossite/  302
+/b/ev/franklin  https://vt.ncsbe.gov/ossite/  302
+/b/ev/gaston  https://vt.ncsbe.gov/ossite/  302
+/b/ev/gates  https://vt.ncsbe.gov/ossite/  302
+/b/ev/graham  https://vt.ncsbe.gov/ossite/  302
+/b/ev/granville  https://vt.ncsbe.gov/ossite/  302
+/b/ev/greene  https://vt.ncsbe.gov/ossite/  302
+/b/ev/guilford  https://vt.ncsbe.gov/ossite/  302
+/b/ev/halifax  https://vt.ncsbe.gov/ossite/  302
+/b/ev/harnett  https://vt.ncsbe.gov/ossite/  302
+/b/ev/haywood  https://vt.ncsbe.gov/ossite/  302
+/b/ev/henderson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/hertford  https://vt.ncsbe.gov/ossite/  302
+/b/ev/hoke  https://vt.ncsbe.gov/ossite/  302
+/b/ev/hyde  https://vt.ncsbe.gov/ossite/  302
+/b/ev/iredell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/jackson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/johnston  https://vt.ncsbe.gov/ossite/  302
+/b/ev/jones  https://vt.ncsbe.gov/ossite/  302
+/b/ev/lee  https://vt.ncsbe.gov/ossite/  302
+/b/ev/lenoir  https://vt.ncsbe.gov/ossite/  302
+/b/ev/lincoln  https://vt.ncsbe.gov/ossite/  302
+/b/ev/macon  https://vt.ncsbe.gov/ossite/  302
+/b/ev/madison  https://vt.ncsbe.gov/ossite/  302
+/b/ev/martin  https://vt.ncsbe.gov/ossite/  302
+/b/ev/mcdowell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/mecklenburg  https://vt.ncsbe.gov/ossite/  302
+/b/ev/mitchell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/montgomery  https://vt.ncsbe.gov/ossite/  302
+/b/ev/moore  https://vt.ncsbe.gov/ossite/  302
+/b/ev/nash  https://vt.ncsbe.gov/ossite/  302
+/b/ev/new-hanover  https://vt.ncsbe.gov/ossite/  302
+/b/ev/northampton  https://vt.ncsbe.gov/ossite/  302
+/b/ev/onslow  https://vt.ncsbe.gov/ossite/  302
+/b/ev/orange  https://vt.ncsbe.gov/ossite/  302
+/b/ev/pamlico  https://vt.ncsbe.gov/ossite/  302
+/b/ev/pasquotank  https://vt.ncsbe.gov/ossite/  302
+/b/ev/pender  https://vt.ncsbe.gov/ossite/  302
+/b/ev/perquimans  https://vt.ncsbe.gov/ossite/  302
+/b/ev/person  https://vt.ncsbe.gov/ossite/  302
+/b/ev/pitt  https://vt.ncsbe.gov/ossite/  302
+/b/ev/polk  https://vt.ncsbe.gov/ossite/  302
+/b/ev/randolph  https://vt.ncsbe.gov/ossite/  302
+/b/ev/richmond  https://vt.ncsbe.gov/ossite/  302
+/b/ev/robeson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/rockingham  https://vt.ncsbe.gov/ossite/  302
+/b/ev/rowan  https://vt.ncsbe.gov/ossite/  302
+/b/ev/rutherford  https://vt.ncsbe.gov/ossite/  302
+/b/ev/sampson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/scotland  https://vt.ncsbe.gov/ossite/  302
+/b/ev/stanly  https://vt.ncsbe.gov/ossite/  302
+/b/ev/stokes  https://vt.ncsbe.gov/ossite/  302
+/b/ev/surry  https://vt.ncsbe.gov/ossite/  302
+/b/ev/swain  https://vt.ncsbe.gov/ossite/  302
+/b/ev/transylvania  https://vt.ncsbe.gov/ossite/  302
+/b/ev/tyrrell  https://vt.ncsbe.gov/ossite/  302
+/b/ev/union  https://vt.ncsbe.gov/ossite/  302
+/b/ev/vance  https://vt.ncsbe.gov/ossite/  302
+/b/ev/wake  https://vt.ncsbe.gov/ossite/  302
+/b/ev/warren  https://vt.ncsbe.gov/ossite/  302
+/b/ev/washington  https://vt.ncsbe.gov/ossite/  302
+/b/ev/watauga  https://vt.ncsbe.gov/ossite/  302
+/b/ev/wayne  https://vt.ncsbe.gov/ossite/  302
+/b/ev/wilkes  https://vt.ncsbe.gov/ossite/  302
+/b/ev/wilson  https://vt.ncsbe.gov/ossite/  302
+/b/ev/yadkin  https://vt.ncsbe.gov/ossite/  302
+/b/ev/yancey  https://vt.ncsbe.gov/ossite/  302
 
-# Change request (B2) — the existing corrections intake.
+# Change request (B2) — our own corrections intake.
 /b/correct  https://ncpolicyrecord.org/corrections/  302
