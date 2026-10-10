@@ -70,7 +70,8 @@ ol.steps { padding-left: 1.2rem; } ol.steps li { margin: .8rem 0; max-width: 56c
 .undersuggest { text-align: center; margin: 0 0 1.4rem; }
 .evone { margin: .6rem 0 0; }
 .resblock { margin: 1.4rem 0 .6rem; }
-.reslead { font-weight: 700; margin: 0 0 .4rem; }
+.resrow { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; margin: 0 0 .5rem; }
+.reslead { font-weight: 700; }
 .reslist { margin: 0 0 .9rem; padding-left: 1.2rem; }
 .reslist li { margin: .5rem 0; max-width: 56ch; }
 .resbtn { display: inline-block; padding: .8rem 1.3rem; border-radius: 4px; background: var(--navy);
@@ -146,7 +147,7 @@ footer p { margin: .35rem 0; }
 <a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
 <a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online</a>
 <a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a>
-<p class="civiccap">Official North Carolina state services</p><p class="evone"><a class="ncpr-civic-btn evbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites — official NC State Board lookup</a></p>
+<p class="civiccap">Official North Carolina state services</p><p class="evone"><a class="ncpr-civic-btn evbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a></p>
 </aside>
 </div></div></div>
 
@@ -162,13 +163,11 @@ footer p { margin: .35rem 0; }
 <li>Get an answer built only from documented records, with a citation on every fact — click any of them to see the source.</li>
 <li>If it's not in her files, she says “I don't know” and points you to the official source. No guessing. Ever.</li>
 </ol>
-<div class="resblock">
-<p class="reslead">Click here to access and download:</p>
+<div class="resblock"><p class="resrow"><a class="resbtn" href="/b/resources" data-alias="/b/resources" target="_blank" rel="noopener">Resources</a> <span class="reslead">Click here to access and download:</span></p>
 <ul class="reslist">
 <li>Citizen's Guides to State, County, and City structure, authority, responsibilities, and limitations</li>
 <li>Citizen Guides to Education, Environment, Infrastructure, Budgets and Taxes — who governs, who decides, who funds, who pays, who permits, what gets protected and not, what's needed, and what gets built.</li>
 </ul>
-<p><a class="resbtn" href="/b/resources" data-alias="/b/resources" target="_blank" rel="noopener">Resources</a></p>
 </div>
 <p class="undersuggest"><a class="suggestbtn" href="/b/correct" data-alias="/b/correct" target="_blank" rel="noopener">Submit a Suggestion or Correction</a></p>
 </div>
