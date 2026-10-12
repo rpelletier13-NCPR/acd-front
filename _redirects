@@ -45,3 +45,16 @@
 
 # Change request (B2) — our own corrections intake.
 /b/correct  https://ncpolicyrecord.org/corrections/  302
+
+# The voting pages' button stack (CA4-O11-014 item 2) — the ten new
+# counted intents; four more reuse the standing aliases above.
+/b/register-early  https://www.ncsbe.gov/registering/how-register/register-person-during-early-voting  302
+/b/register-update  https://payments.ncdot.gov/service/VoterRegistration  302
+/b/register-faq  https://www.ncsbe.gov/registering/faq-voter-registration  302
+/b/voter-record  https://www.ncsbe.gov/voting/your-voter-record  302
+/b/boe  https://vt.ncsbe.gov/BOEInfo/  302
+/b/vote-mail  https://www.ncsbe.gov/voting/vote-mail  302
+/b/military-overseas  https://www.ncsbe.gov/voting/military-and-overseas-voting  302
+/b/provisional  https://www.ncsbe.gov/voting/provisional-voting  302
+/b/voter-id  https://www.ncsbe.gov/voting/voter-id  302
+/b/free-voter-id  https://www.ncsbe.gov/voting/voter-id/get-free-voter-photo-id  302
