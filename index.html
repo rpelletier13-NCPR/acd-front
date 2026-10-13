@@ -47,6 +47,19 @@ a { color: inherit; }
           font-weight: 800; font-size: 1.03rem; text-decoration: none;
           background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
 .civiccap { font-size: .8rem; margin: .2rem 0 0; opacity: .8; text-align: center; }
+/* "DOES MY VOTE MATTER?" — CA4-O12-005 item 3b: styled to the page, LARGE
+   READABLE TYPE, and a table that stays a table on a phone by scrolling rather
+   than by shrinking its words. */
+.dmvm { padding: 2.2rem 0 1.4rem; }
+.dmvm-lead { font-size: 1.15rem; margin: .2rem 0 1rem; }
+.dmvm-table { width: 100%; border-collapse: collapse; font-size: 1.05rem; line-height: 1.5; }
+.dmvm-table th, .dmvm-table td { text-align: left; vertical-align: top;
+                                 padding: .7rem .8rem; border-bottom: 1px solid var(--pale); }
+.dmvm-table th { font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; }
+.dmvm-table td:nth-child(2) { white-space: nowrap; font-weight: 700; }
+.dmvm-close { font-size: 1.05rem; margin: 1rem 0 0; max-width: 60ch; }
+@media (max-width: 720px) { .dmvm-table { display: block; overflow-x: auto; }
+                            .dmvm-table td:nth-child(2) { white-space: normal; } }
 .btns { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.3rem; }
 .btn { display: inline-block; padding: .8rem 1.2rem; border-radius: 6px;
        font-weight: 700; text-decoration: none; }
@@ -141,7 +154,7 @@ footer p { margin: .35rem 0; }
 <aside class="civic">
 <a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
 <a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online</a>
-<a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a>
+<a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a><a class="civicbtn" href="/b/voting" data-alias="/b/voting" target="_blank" rel="noopener">Other Voting Information</a>
 <p class="civiccap">Official North Carolina state services</p>
 </aside>
 </div></div></div>
@@ -193,6 +206,19 @@ footer p { margin: .35rem 0; }
 <a class="tile" href="/q/race-rights" target="_blank" rel="noopener"><b>Race and Rights</b>Fifteen years of law-making, documented.</a>
 <a class="tile" href="/q/revenue-caps" target="_blank" rel="noopener"><b>State Revenue Caps</b>The amendments' math: what gets funded, what doesn't.</a>
 </div>
+</div></section><section class="dmvm"><div class="wrap">
+<h2>Does my vote matter?</h2>
+<p class="dmvm-lead">Yes. Four North Carolina elections — verified against certified results:</p>
+<table class="dmvm-table">
+<thead><tr><th scope="col">Race</th><th scope="col">Margin</th><th scope="col">What it decided</th></tr></thead>
+<tbody>
+<tr><td>NC Supreme Court, 2024 — Allison Riggs def. Jefferson Griffin, 2,770,412–2,769,678</td><td>734 votes of 5,540,090</td><td>A seat on the state's highest court; certified May 2025 after recounts and litigation (NCSBE)</td></tr>
+<tr><td>NC Senate 26 primary, 2026 — Sam Page def. Senate leader Phil Berger, 13,135–13,112</td><td>23 votes of 26,247</td><td>Ended a 25-year Senate career and 15 years as the chamber's leader (NCSBE; WUNC)</td></tr>
+<tr><td>NC Senate 9, 2018 — Harper Peterson def. Michael Lee, 42,257–42,026</td><td>231 votes of 86,954</td><td>Among the seats that broke the veto-proof supermajorities (NCSBE; WUNC)</td></tr>
+<tr><td>NHC Board of Education, 2024 — David Perry 60,912; Jerry Jones Jr. 60,606</td><td>306 votes</td><td>The board's final seat — fewer than 8 votes per precinct (NCSBE; StarNews)</td></tr>
+</tbody>
+</table>
+<p class="dmvm-close"><em>A single vote rarely decides an election by itself — but elections are repeatedly decided by collections of individual voters who might each have believed their vote would not matter.</em></p>
 </div></section>
 
 <section class="pale"><div class="wrap">

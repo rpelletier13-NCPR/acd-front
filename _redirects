@@ -37,6 +37,9 @@
 /b/register  https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx  302
 /b/check  https://vt.ncsbe.gov/RegLkup/  302
 
+# Other voting information (CA4-O12-005 item 1) — our own voting page.
+/b/voting  https://nctimetochoose.org/voting/  302
+
 # Early voting (B1) — the official statewide finder.
 /b/earlyvote  https://vt.ncsbe.gov/ossite/  302
 
