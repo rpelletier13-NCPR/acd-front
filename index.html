@@ -46,6 +46,16 @@ a { color: inherit; }
 .civicbtn { display: block; padding: 1.05rem 1.1rem; border-radius: 8px; text-align: center;
           font-weight: 800; font-size: 1.03rem; text-decoration: none;
           background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
+/* THE SMALL PRINT ON A SHELF BUTTON — RULED CA4-O12-017. INSIDE the link, so
+   it is clickable with the button and read aloud with the label.
+   .85rem = 13.6px at the root size, above the ruled 13px floor, and it carries
+   the SAME ink as the label on the SAME background -- navy on white, 10.26:1,
+   in every state, because no civicbtn rule changes either colour on hover or
+   focus. No raw colour is added; both are existing tokens.
+   The row stays even without touching the other four: the shelf is a column of
+   full-width buttons, so a second line grows only its own button downward. */
+.civicsub { display: block; font-size: .85rem; font-weight: 600; margin-top: .2rem;
+            color: var(--navy); }
 .civiccap { font-size: .8rem; margin: .2rem 0 0; opacity: .8; text-align: center; }
 /* "DOES MY VOTE MATTER?" — CA4-O12-005 item 3b: styled to the page, LARGE
    READABLE TYPE, and a table that stays a table on a phone by scrolling rather
@@ -153,7 +163,7 @@ footer p { margin: .35rem 0; }
 </div>
 <aside class="civic">
 <a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
-<a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online</a>
+<a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online<span class="civicsub">Deadline: October 9th for 2026 Election</span></a>
 <a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a><a class="civicbtn" href="/b/voting" data-alias="/b/voting" target="_blank" rel="noopener">Other Voting Information</a>
 <p class="civiccap">Official North Carolina state services</p>
 </aside>
