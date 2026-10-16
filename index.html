@@ -81,6 +81,26 @@ h2 { font-size: clamp(1.4rem, 3.4vw, 2rem); margin-top: 0; }
 @media (min-width: 820px) { .split { grid-template-columns: 1fr 1fr; align-items: center; } }
 .vcard { background: var(--ink); color: var(--white); border-radius: 10px;
          padding: 2.2rem 1.2rem; text-align: center; font-weight: 700; letter-spacing: .04em; }
+/* THE EARLY-VOTING NOTE — RP CA4-O12-094 item 2: "a visible box with a border and
+   a light background that stand out from the page", type at least the size of body
+   text, wrapping cleanly on a phone with no horizontal scroll. Plain CSS, no script.
+   The box is a child of .wrap, so it is the content column's own width at every
+   viewport -- it does not sit inside the video's .split column and so cannot be
+   half-width on a wide screen. 1.15rem against an unset body size (16px) is larger
+   than body text, not merely equal to it. overflow-wrap:anywhere is the no-scroll
+   guarantee: the longest unbreakable token here is a word, but a link that ever
+   printed its URL would break rather than widen the page. Colours are tokens --
+   a raw value in this file is a build failure under the token lint. */
+.evnote-wrap { padding: 1.4rem 0 0; }
+.evnote { border: 3px solid var(--navy); border-left-width: 10px;
+          background: var(--cream); color: var(--ink); border-radius: 10px;
+          padding: 1rem 1.15rem; }
+.evnote p { margin: 0; font-size: 1.15rem; line-height: 1.5; font-weight: 600;
+            overflow-wrap: anywhere; }
+.evnote p + p { margin-top: .55rem; }
+.evnote-lead { font-weight: 800; }
+.evnote a { color: var(--navy); text-decoration: underline;
+            text-underline-offset: .15em; }
 .vcap { font-size: .9rem; margin-top: .7rem; opacity: .95; }
 .vcard video { width: 100%; border-radius: 6px; display: block;
           max-height: 72vh; object-fit: contain; background: var(--ink); margin: 0 auto; }
@@ -167,8 +187,12 @@ footer p { margin: .35rem 0; }
 <a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a><a class="civicbtn" href="/b/voting" data-alias="/b/voting" target="_blank" rel="noopener">Other Voting Information</a>
 <p class="civiccap">Official North Carolina state services</p>
 </aside>
-</div></div></div>
-
+</div></div></div><section class="evnote-wrap"><div class="wrap">
+<div class="evnote" role="note">
+<p class="evnote-s1"><strong class="evnote-lead">Note:</strong> You can still <a href="https://www.ncsbe.gov/registering/how-register/register-person-during-early-voting" target="_blank" rel="noopener noreferrer">register to vote onsite during Early Voting</a> at the early voting polling location.</p>
+<p class="evnote-s2">You cannot register to vote on Election Day, November 3rd.</p>
+</div>
+</div></section>
 <section><div class="wrap"><div class="split">
 <div class="vcard">
 <video controls preload="metadata" poster="/media/welcome-poster.jpg" src="/media/welcome.mp4"></video>
