@@ -77,6 +77,43 @@ a { color: inherit; }
 .btn-secondary { background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
 section { padding: 2.4rem 0; }
 h2 { font-size: clamp(1.4rem, 3.4vw, 2rem); margin-top: 0; }
+/* THE THREE-VIDEO ROW (CA4-O18-008 item 3a/3b). ONE ROW AT EVERY WIDTH, by
+   ruling: never `flex-wrap`, never a stacked column. Three equal columns from
+   700px; below that the same row scrolls sideways with snapping and each card
+   is 85vw, so the next video is always visible beside the first. */
+.acd-ytrow { padding: 2rem 0 .5rem; }
+.ytrow { display: flex; flex-wrap: nowrap; gap: 1.1rem; list-style: none;
+         margin: 0; padding: 0; }
+.ytcard { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; }
+/* TWO LINES RESERVED so the three frames start on the same line whatever the
+   title length — the longest of RP's three names wraps and the other two do
+   not, which left one card hanging below its neighbours. */
+.ytcard-title { font-size: 1.3rem; font-weight: 800; line-height: 1.2;
+                margin: 0 0 .55rem; color: var(--navy); min-height: 3.12rem; }
+.ytplay { display: block; position: relative; aspect-ratio: 16 / 9;
+          background: var(--ink); border: 2px solid var(--navy); border-radius: 8px;
+          overflow: hidden; text-decoration: none; }
+.ytthumb { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ytplaymark { position: absolute; left: 50%; top: 50%; width: 68px; height: 68px;
+              margin: -34px 0 0 -34px; border-radius: 50%;
+              background: var(--gold); opacity: .94; }
+.ytplaymark::after { content: ""; position: absolute; left: 26px; top: 20px;
+                     border-style: solid; border-width: 14px 0 14px 23px;
+                     border-color: transparent transparent transparent var(--ink); }
+.ytplay:hover .ytplaymark, .ytplay:focus .ytplaymark { opacity: 1; }
+/* NEVER BELOW 18px, by ruling, and never smaller than the page's body text. */
+.ytcap { font-size: 1.125rem; line-height: 1.5; margin: .7rem 0 0; }
+.ytmore { margin: 1.6rem 0 .4rem; text-align: center; }
+.ytmorebtn { display: inline-block; min-height: 48px; padding: .95rem 2.2rem;
+             font-size: 1.15rem; font-weight: 800; text-decoration: none;
+             border-radius: 6px; background: var(--navy); color: var(--white);
+             border: 2px solid var(--navy); }
+.ytmorebtn:hover, .ytmorebtn:focus { background: var(--white); color: var(--navy); }
+@media (max-width: 699px) {
+  .ytrow { overflow-x: auto; scroll-snap-type: x mandatory;
+           -webkit-overflow-scrolling: touch; padding-bottom: .6rem; }
+  .ytcard { flex: 0 0 85%; scroll-snap-align: start; }
+}
 .split { display: grid; gap: 1.6rem; grid-template-columns: 1fr; }
 @media (min-width: 820px) { .split { grid-template-columns: 1fr 1fr; align-items: center; } }
 .vcard { background: var(--ink); color: var(--white); border-radius: 10px;
@@ -227,6 +264,26 @@ footer p { margin: .35rem 0; }
 <a class="chip" href="/c/f" target="_blank" rel="noopener">What happens to school funding when the corporate income tax is 0% in 2030?</a>
 </div>
 <p class="chipfoot">Ask as many as you want. Download the transcript. Take it to the voting booth.</p>
+</div></section>
+<section class="acd-ytrow"><div class="wrap">
+<ul class="ytrow">
+<li class="ytcard">
+<h3 class="ytcard-title">Two Tax Questions on North Carolina Ballot</h3>
+<a class="ytplay" href="https://youtu.be/iypocb-zLL4" target="_blank" rel="noopener" aria-label="Watch on YouTube: Two Tax Questions on North Carolina Ballot (opens in a new tab)"><img class="ytthumb" src="/media/yt-iypocb-zLL4.jpg" alt="Two Tax Questions on North Carolina Ballot" width="800" height="450" loading="lazy" decoding="async"><span class="ytplaymark" aria-hidden="true"></span></a>
+<p class="ytcap">NC, two tax questions on the ballot which opponents say would limit services and the delivery of schools, and other infrastructure in the future. The video is 5 min, the consequences last a generation.</p>
+</li>
+<li class="ytcard">
+<h3 class="ytcard-title">NC Corporate Income Tax</h3>
+<a class="ytplay" href="https://youtu.be/71eQp9dr5hQ" target="_blank" rel="noopener" aria-label="Watch on YouTube: NC Corporate Income Tax (opens in a new tab)"><img class="ytthumb" src="/media/yt-71eQp9dr5hQ.jpg" alt="NC Corporate Income Tax" width="800" height="450" loading="lazy" decoding="async"><span class="ytplaymark" aria-hidden="true"></span></a>
+<p class="ytcap">The NC Corporate Income Tax is 2% and will be 0% by law in 2030. The CIT is on the ballot.</p>
+</li>
+<li class="ytcard">
+<h3 class="ytcard-title">NC Gerrymandering</h3>
+<a class="ytplay" href="https://youtu.be/Of0ddyxMPOg" target="_blank" rel="noopener" aria-label="Watch on YouTube: NC Gerrymandering (opens in a new tab)"><img class="ytthumb" src="/media/yt-Of0ddyxMPOg.jpg" alt="NC Gerrymandering" width="800" height="450" loading="lazy" decoding="async"><span class="ytplaymark" aria-hidden="true"></span></a>
+<p class="ytcap">NC gerrymandering from 2010 to 2026. Who draws the maps matters.</p>
+</li>
+</ul>
+<p class="ytmore"><a class="ytmorebtn" href="https://nctimetochoose.org/resources/" target="_blank" rel="noopener">More Videos</a></p>
 </div></section>
 
 <section><div class="wrap">
