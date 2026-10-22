@@ -10,6 +10,11 @@
 /s/em  /  302
 /s/vlog  /  302
 
+# Ad placements: one 302 per placement, target '/', not rendered.
+/s/ad-dnb  /  302
+/s/ad-nhc-bc  /  302
+/s/ad-meck  /  302
+
 # Question aliases — tiles (item 1).
 /q/environment  https://nctimetochoose.org/ask-carol/?q=What%20were%20North%20Carolina%27s%20biggest%20environment%20and%20climate%20policy%20decisions%20since%202010%3F  302
 /q/education  https://nctimetochoose.org/ask-carol/?q=How%20has%20NC%20been%20funding%20private%20school%20education%20since%202010%3F  302
