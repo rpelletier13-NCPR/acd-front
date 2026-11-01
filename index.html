@@ -56,6 +56,14 @@ a { color: inherit; }
    full-width buttons, so a second line grows only its own button downward. */
 .civicsub { display: block; font-size: .85rem; font-weight: 600; margin-top: .2rem;
             color: var(--navy); }
+/* A CLOSED ITEM — RP CA4-N01-009 change 2d: "Keep it looking like the page's
+   other buttons, as a closed item."  It wears .civicbtn, so it keeps the
+   shelf's shape, ink and border exactly; this rule only takes away what a
+   non-link should not have. NO NEW COLOUR TOKEN: the same navy on the same
+   white, 10.26:1, so the words are no harder to read than any other button's.
+   A dashed border is the one visible difference, and it says "not a door"
+   without relying on colour alone. */
+.civicbtn-closed { cursor: default; border-style: dashed; }
 .civiccap { font-size: .8rem; margin: .2rem 0 0; opacity: .8; text-align: center; }
 /* "DOES MY VOTE MATTER?" — CA4-O12-005 item 3b: styled to the page, LARGE
    READABLE TYPE, and a table that stays a table on a phone by scrolling rather
@@ -220,14 +228,13 @@ footer p { margin: .35rem 0; }
 </div>
 <aside class="civic">
 <a class="civicbtn" href="/b/ballot" target="_blank" rel="noopener">Find My Ballot</a>
-<a class="civicbtn" href="/b/register" target="_blank" rel="noopener">Register to Vote Online<span class="civicsub">Online registration closed October 9. You can still register in person at an early voting site in your county through 3 p.m. October 31. Bring proof of where you live.</span></a>
-<a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find Early Voting Sites</a><a class="civicbtn" href="/b/voting" data-alias="/b/voting" target="_blank" rel="noopener">Other Voting Information</a>
+<span class="civicbtn civicbtn-closed" data-closed="1">Register to Vote Online<span class="civicsub">It is too late to register to vote for the November 3, 2026 election.</span></span>
+<a class="civicbtn" href="/b/check" target="_blank" rel="noopener">Check My Registration</a><a class="civicbtn" href="/b/earlyvote" data-alias="/b/earlyvote" target="_blank" rel="noopener">Find My Polling Place</a><a class="civicbtn" href="/b/voting" data-alias="/b/voting" target="_blank" rel="noopener">Other Voting Information</a>
 <p class="civiccap">Official North Carolina state services</p>
 </aside>
 </div></div></div><section class="evnote-wrap"><div class="wrap">
 <div class="evnote" role="note">
-<p class="evnote-s1"><strong class="evnote-lead">Note:</strong> You can still <a href="https://www.ncsbe.gov/registering/how-register/register-person-during-early-voting" target="_blank" rel="noopener noreferrer">register to vote onsite during Early Voting</a> at the early voting polling location.</p>
-<p class="evnote-s2">You cannot register to vote on Election Day, November 3rd.</p>
+<p class="evnote-s2"><strong class="evnote-lead">Note:</strong> You cannot register to vote on Election Day, November 3rd.</p>
 </div>
 </div></section>
 <section><div class="wrap"><div class="split">
